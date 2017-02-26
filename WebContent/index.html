@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+    <meta name="author" content="Nadim Iqbal"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="image/Icon_Fiori.png" rel="icon" type="image/x-icon">
+    <title>Carrier Rate Approval</title>
+    <!-- Load Style -->
+    <link rel="stylesheet" type="text/css" href="css/Style.css">
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            id="sap-ui-bootstrap"
+            data-sap-ui-language="en"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-preload="async"
+            data-sap-ui-bindingSyntax="complex"
+            data-sap-ui-resourceroots='{"nad": "./"}'
+            data-sap-ui-theme="sap_bluecrystal">
+    </script>
+    <script>
+        sap.ui.getCore().attachInit(function () {
+//Remove Loading element
+            var oChild = document.getElementById("fountainTextG");
+            if (oChild) {
+                oChild.parentNode.removeChild(oChild);
+            }
+            sap.m.Shell({
+                app: new sap.ui.core.ComponentContainer({
+                    name: "nad",
+                    height: "100%"
+                })
+            }).placeAt("content");
+        })
+        ;
+    </script>
+</head>
+<body class="sapUiBody" role="application">
+<!--UI5 Loading-->
+<div id="fountainTextG">
+    <div id="fountainTextG_1" class="fountainTextG">S</div>
+    <div id="fountainTextG_2" class="fountainTextG">A</div>
+    <div id="fountainTextG_3" class="fountainTextG">P</div>
+    <div id="fountainTextG_4" class="fountainTextG">U</div>
+    <div id="fountainTextG_5" class="fountainTextG">I</div>
+    <div id="fountainTextG_6" class="fountainTextG">5</div>
+    <div id="fountainTextG_7" class="fountainTextG"></div>
+    <div id="fountainTextG_8" class="fountainTextG">L</div>
+    <div id="fountainTextG_9" class="fountainTextG">o</div>
+    <div id="fountainTextG_10" class="fountainTextG">a</div>
+    <div id="fountainTextG_11" class="fountainTextG">d</div>
+    <div id="fountainTextG_12" class="fountainTextG">i</div>
+    <div id="fountainTextG_13" class="fountainTextG">n</div>
+    <div id="fountainTextG_14" class="fountainTextG">g</div>
+    <div id="fountainTextG_15" class="fountainTextG">.</div>
+    <div id="fountainTextG_16" class="fountainTextG">.</div>
+    <div id="fountainTextG_17" class="fountainTextG">.</div>
+</div>
+<!--UI5 Loading End-->
+<div id="content" class="sapUiBody"></div>
+</body>
+</html>
+
+
